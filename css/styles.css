@@ -1,0 +1,2446 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* ================================
+   Global Styles
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "New Rail Alphabet", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,    /* Start with white */
+    rgba(184, 184, 184, 0.8) 6%, /* Darker shade appears in the first section */
+    rgba(255, 255, 255, 1) 25%    /* Fully white after the first section */
+  );
+}
+
+
+
+
+/* ================================
+   Top Bar
+================================ */
+.top-bar {
+  width: 100%;
+  height: 49.36px;
+  background: #322d2d;
+  border-bottom-right-radius: 4.05px;
+  border-bottom-left-radius: 4.05px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12.14px;
+  margin: 0 auto;
+}
+
+.top-bar-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 463.32px;
+  height: 49.36px;
+  padding: 16.18px 16.18px 16.18px 12.14px;
+  display: flex;
+  align-items: center;
+  gap: 8.09px;
+}
+/* Page 1 - Start */
+/* ================================
+   Header & Navbar
+================================ */
+.header {
+  padding: 15px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1.5px;
+}
+
+/* Navbar Links */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #322d2d;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffcc00;
+}
+
+/* ================================
+   Dropdown Styles
+================================ */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.vector-icon {
+  width: 12.74px;
+  height: 7.21px;
+  margin-top: 2px;
+  margin-left: 5.77px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #322d2d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ================================
+   Button Styles
+================================ */
+.btn-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Search Button */
+.btn-search {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #f5f5f5;
+}
+
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container.active {
+  transform: translateY(0);
+}
+
+.search-container input {
+  width: 80%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px; /* Creates the pill shape */
+  background-color: #E5E5E5; /* Matches the light gray tone */
+  color: #333;
+  outline: none;
+}
+
+.search-container input::placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+/* ================================
+   Shop Button,
+   Try Alcami Button 
+================================ */
+
+.home-btn-shop {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 25px;
+  color: #000;
+  transition: opacity 0.3s ease;
+  margin-top: 40px;
+  /* New styles for alignment */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px; /* Adds slight spacing between text and icon */
+}
+
+.home-btn-shop:hover {
+  opacity: 0.8;
+}
+
+.btn-try {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+
+  line-height: 16.18px;
+  border-radius: 20px;
+  color: #000;
+  transition: opacity 0.3s ease;
+}
+.btn-try-text {
+  /* New styles for alignment */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px; /* Adds slight spacing between text and icon */
+  font-size: 16.2px;
+}
+.btn-try:hover {
+  opacity: 0.9;
+}
+
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 10%;
+  width: 96%;
+  gap: 36px;
+}
+
+.home-container {
+  max-width: 600px;
+}
+
+/* Hero Heading */
+.home-title {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 112%;
+  letter-spacing: -1.33px;
+  color: #322d2d;
+}
+
+/* ================================
+   Rating Box
+================================= */
+.home-rating-box {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90.05deg,
+    rgba(255, 255, 255, 0.36) 0.04%,
+    rgba(252, 252, 252, 0.12) 102.54%
+  );
+  border-radius: 10000px;
+  padding: 5px 16px 5px 8px;
+  width: fit-content;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.home-rating-box span {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10000px;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  gap: 4px;
+}
+
+/* ================================
+   Stat Section
+================================= */
+.home-stats {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.home-stat-value {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #dbb95e 90.77%,
+    #c09f41 104.74%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.home-stat-value span {
+  font-size: 28px;
+  line-height: 100%;
+  font-family: "New Rail Alphabet", sans-serif;
+  margin-left: 10px;
+}
+
+.home-stat-label {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 104%;
+  color: #322d2d;
+}
+
+.home-product-container {
+  max-width: 500px;
+  text-align: center;
+}
+
+.home-product-img {
+  width: 646px;
+  height: 431.59px;
+}
+
+/* Page 2 - Start */
+
+/* ================================
+   Taste Section
+================================ */
+.taste-section {
+  text-align: center;
+  padding: 20px 0;
+  margin: 40px auto;
+  width: 912px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-radius: 16px;
+  background-clip: padding-box;
+  margin-bottom: 120px;
+}
+
+/* Gradient border using pseudo-element */
+.taste-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px; /* Equal to border width */
+  border-radius: inherit; /* Ensure consistent rounded corners */
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+}
+
+/* Paragraph styles */
+.taste-section p {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -2.02px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #322d2d;
+  margin: 0;
+}
+
+/* ================================
+   Hero H2 Fix
+================================ */
+h2 {
+  overflow: visible;
+  white-space: nowrap;
+}
+
+/* ================================
+   powerful-elements-section
+================================ */
+.powerful-elements {
+  width: 1328px;
+  height: 774.48px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 120px;
+}
+
+/* Inner Container */
+.powerful-elements-container {
+  display: flex;
+  width: 100%;
+  max-width: 1328px;
+  gap: 48px;
+}
+
+/* Left Section - Image Container */
+.elements-img-container {
+  width: 730px;
+  height: 774.48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img2 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Right Section - Text Container */
+.elements-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 550;
+  gap: 24px;
+  width: 500px;
+  height: 310.2709045410156;
+  gap: 27px;
+}
+
+.elements-text-container h3 {
+  width: 550px; /* Corrected width with px */
+  height: 20px; /* Corrected height with px */
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%; /* Corrected line-height */
+  letter-spacing: 3.03px;
+  background: linear-gradient(90deg, #9e6718 0%, #ffb545 100%);
+  -webkit-background-clip: text; /* Ensures gradient applies to text */
+  -webkit-text-fill-color: transparent; /* Makes text color transparent to show gradient */
+}
+
+.elements-text-container h1 {
+  width: 550px; /* Corrected width with px */
+  height: 90px; /* Corrected height with px */
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 100%; /* Corrected line-height */
+  letter-spacing: 0px;
+  color: #322d2d; /* Corrected color */
+}
+
+.elements-text-container p {
+  width: 550px; /* Corrected width with px */
+  height: 90px; /* Corrected height with px */
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 30px; /* Corrected line-height */
+  letter-spacing: 0px;
+  color: #322d2d; /* Corrected color */
+}
+
+/* Button Style */
+.btn-view-ingredients {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 307.24px; /* Corrected width */
+  height: 41.27px; /* Corrected height */
+  padding: 12.14px 24.27px; /* Corrected padding */
+  border: none;
+  border-radius: 505.64px; /* Corrected border-radius */
+  border-bottom-width: 1.01px; /* Optional - specify border style if needed */
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 14.2px;
+  line-height: 16.18px;
+  color: #000;
+  text-align: left; /* Align text to the left */
+  transition: opacity 0.3s ease;
+}
+
+/* Optional hover effect */
+.btn-view-ingredients:hover {
+  opacity: 0.85;
+}
+
+/* Button Text Style */
+.btn-view-ingredients-text {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16.18px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: left; /* Align text to the left if necessary */
+  /* New styles for alignment */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px; /* Adds slight spacing between text and icon */
+}
+
+/* ================================
+   garentee-section
+================================ */
+
+/* Main Section */
+.our-guarantee-section {
+  width: 1328px;
+  height: 114.28px;
+  background: #f9f9f9;
+  border-radius: 14.16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  margin-bottom: 120px;
+}
+
+/* Container */
+.our-guarantee-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Title */
+.guarantee-title {
+  background: linear-gradient(90deg, #9e6718 0%, #ffb545 115.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "New Rail Alphabet", sans-serif; /* Corrected font-family */
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 100%; /* Removed invalid 'leading-trim' */
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Individual Item */
+.guarantee-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Guarantee Content */
+.guarantee-content h3 {
+  font-size: 20px; /* Fixed to the correct size */
+  font-weight: 300; /* Corrected weight */
+  margin: 0;
+  height: 23px; /* Added px for height */
+  font-family: "New Rail Alphabet", sans-serif;
+  line-height: 22.99px;
+  letter-spacing: 0px;
+  color: #322d2d;
+}
+
+.guarantee-content p {
+  font-size: 16px; /* Fixed to the larger value */
+  color: #888;
+  margin: 0;
+  height: 20px; /* Added px */
+  font-family: "New Rail Alphabet", sans-serif; /* Corrected font-family */
+  font-weight: 300;
+  line-height: 19.16px;
+  letter-spacing: 0px;
+}
+
+/* Icons */
+.guarantee-item img {
+  width: 46px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .our-guarantee-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .guarantee-item {
+    justify-content: flex-start;
+  }
+
+  .our-guarantee-section {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Page 3 - Start */
+
+
+
+/* Container */
+.also-seen-in-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1328px;
+  margin: 0 auto;
+  padding: 24px 0;
+  margin-bottom: 120px;
+}
+
+/* Title */
+.also-seen-in-item {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333;
+  margin-right: 100px;
+}
+
+/* Individual Item Styles */
+.also-seen-in-item-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Images */
+.also-seen-in-item-container img {
+  width: auto;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* Margin between items */
+.also-seen-in-item-one,
+.also-seen-in-item-two,
+.also-seen-in-item-three,
+.also-seen-in-item-four,
+.also-seen-in-item-five {
+  margin-left: 0px;
+}
+
+.also-seen-in-item-one {
+  margin-left: 0;
+}
+
+.divider {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  margin-bottom: 70px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* Cart sub Section */
+.cart-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  width: 100%;
+}
+
+.cart-sub-display {
+  display: flex;
+  gap: 50px;
+  max-width: 1100px;
+}
+
+/* Left Section (Product Display) */
+.cart-sub-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 610px;
+}
+
+.cart-sub-slider-container {
+  position: relative;
+  text-align: center;
+}
+
+.cart-sub-main-img {
+  border-radius: 10px;
+  width: 590px;
+}
+
+.cart-sub-thumbnails-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cart-sub-thumbnail-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart-sub-thumbnail {
+  width: 130px; /* Adjust thumbnail size */
+  height: 130px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-sub-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Arrows */
+/* Navigation Arrows & Dots Container */
+.cart-sub-arrows {
+  display: flex;
+  justify-content: space-between; /* Align arrows at both ends */
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Adjust based on carousel width */
+  margin: 10px auto;
+  position: relative;
+}
+
+/* Navigation Buttons */
+.cart-sub-prev,
+.cart-sub-next {
+  background: transparent;
+  border: 2px solid #322D2D; /* Circular border */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Makes it a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #322D2D; /* Dark arrow */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.cart-sub-prev:hover,
+.cart-sub-next:hover {
+  background: #322D2D;
+  color: #fff; /* White arrow on hover */
+}
+
+/* Dots Container (Centered) */
+.cart-sub-dots {
+  display: flex;
+  gap: 8px;
+}
+
+/* Individual Dots */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Active Dot */
+.dot.active {
+  background: #322D2D; /* Dark color for active dot */
+}
+
+/* Right Section (Product Info) */
+.cart-sub-right {
+  max-width: 450px;
+}
+
+.cart-sub-title {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #322D2D;
+}
+
+.cart-sub-description {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-size: 14px;
+  color: #322D2D;
+  line-height: 1.3;
+  margin-top: 20px;
+}
+
+.cart-sub-subheading {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Cart Flavors */
+.cart-sub-flavors {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cart-sub-flavor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 150.22px;
+  height: auto;
+  background: #F9F9F9;
+  border-radius: 6.07px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.cart-sub-flavor-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  gap: 10px;
+}
+
+.cart-sub-flavor span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #322D2D;
+}
+
+.cart-sub-flavor input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Cart Flavor Images */
+.cart-sub-flavor-img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.bestseller-badge {
+  position: absolute; /* Position it relative to the nearest positioned ancestor */
+  bottom: 0;
+  right: 0;
+  width: 60%;
+}
+
+
+/* Selected State */
+.cart-sub-flavor input:checked + span {
+  color: #9E6718;
+  font-weight: bold;
+}
+
+.cart-sub-flavor input:checked {
+  accent-color: #9E6718;
+}
+
+.cart-sub-flavor:hover {
+  transform: scale(1.05);
+}
+
+/* Cart Subscription Options */
+.cart-sub-options {
+  margin-top: 20px;
+}
+
+.cart-sub-option {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.cart-sub-badge {
+  background: linear-gradient(90deg, #A27533 0%, #FAC568 100%);
+  color: #fff;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Aligning label properly */
+.cart-sub-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.cart-sub-label input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #A27533; /* Gold radio button */
+}
+.only-border {
+  display: block; /* Ensures it takes up space */
+  width: 100%; /* Matches the width of the parent label */
+  height: 1px;
+  background: #919798; /* Adds a horizontal border */
+  margin-top: 5px; /* Spacing from price */
+}
+
+/* Subscription Title */
+.cart-sub-option-title {
+  font-weight: bold;
+  flex-grow: 1; /* Ensures proper spacing */
+  color: #322D2D;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20.23px;
+}
+
+/* Subscription Price */
+.cart-sub-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #322D2D;
+}
+
+.cart-sub-price del {
+  color: #B0B0B0;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* What's Included Section */
+.cart-sub-includes {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.cart-sub-includes-title {
+  font-weight: 600;
+  color: #322D2D;
+}
+
+.cart-sub-includes ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.cart-sub-includes li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  color: #322D2D;
+}
+
+.cart-sub-add-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #667744;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.cart-sub-add-btn:hover {
+  background: #444;
+}
+
+.single-kit-imgs{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; /* Adjust spacing between items */
+  padding-top: 15px;
+  max-width: 400px; /* Restricts max width */
+  margin: 0 auto; /* Centers within parent container */
+}
+.single-kit-imgs img {
+  width: 100%; /* Set image width */
+  height: 150.5283966064453px; /* Maintain aspect ratio */
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* Add-Ons Section */
+.add-ons-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1328px;
+  margin: 0 auto;
+  padding: 24px 0;
+  margin-bottom: 60px;
+}
+
+/* Individual Item Styles */
+.add-ons-item-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Images */
+.add-ons-item-container img {
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Margin between items */
+.add-ons-item-one,
+.add-ons-item-two,
+.add-ons-item-three,
+.add-ons-item-four,
+.add-ons-item-five .add-ons-item-six {
+  margin-left: 0px;
+}
+
+/* Divider (if needed) */
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+/* Shilajit Section Styling */
+.prod-shilajit {
+  width: 100%;
+  padding: 60px 90px;
+  text-align: center;
+}
+
+/* Title and Subtitle */
+.prod-title {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #322d2d;
+  margin-bottom: 10px;
+}
+
+.prod-subtitle {
+  font-size: 12px;
+  color: #322d2d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Content Layout */
+.prod-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 40px; */
+}
+
+/* Left: Product Image */
+.prod-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.prod-image img {
+  max-width: 70%; /* Reduce the image size */
+  height: auto;
+  object-fit: contain; /* Ensures it scales proportionally */
+}
+
+/* Right: Benefits Grid */
+.prod-content {
+  flex: 1;
+  text-align: left;
+}
+
+.prod-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.benefit-card {
+  background: #fafaf8;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 370px;
+}
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.benefit-card p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.benefit-icon img {
+  width: 44px;
+  height: 44px;
+}
+
+/* CTA Button */
+/* Shilajit CTA Button */
+.cta-button-shilaji {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 160px; /* Slightly reduced width */
+  height: 40px; /* Height for compact look */
+  padding: 10px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  text-align: left;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px; /* Space between text and icon */
+  margin: 30px auto 0;
+}
+
+/* Hover Effect */
+.cta-button-shilaji:hover {
+  opacity: 0.85;
+}
+
+/* Button Text */
+.cta-button-shilaji-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+}
+
+/* Subscription Banner */
+.subscription-banner {
+  height: 480px;
+  background-image: url("/assets/bannerImg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start; /* Content aligned to the left */
+  align-items: center;
+  padding-left: 64px; /* Adds spacing from the left */
+  position: relative;
+  border-radius: 20px;
+  margin: 40px auto 120px auto; /* Fixed spacing */
+  max-width: 90%;
+  padding: 80px 20px;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Banner Content */
+.banner-content {
+  max-width: 600px; /* Limit content width */
+  width: 100%;
+
+  padding-left: 40px;
+}
+
+/* Banner Text Content */
+.banner-text {
+  text-align: left;
+}
+
+/* Subtitle */
+/* Banner Subtitle */
+.banner-subtitle {
+  background: linear-gradient(90deg, #9e6718 0%, #ffb545 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "New Rail Alphabet", sans-serif; /* Corrected font-family */
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+/* Banner Title */
+.banner-title {
+  font-size: 36px;
+  font-weight: 500; /* Regular weight for normal text */
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: #322d2d;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-decoration: none;
+}
+
+/* Bold Text Inside Title */
+.banner-title .banner-bold {
+  font-weight: 700; /* Only bold for specific span */
+  font-family: inherit; /* Inherits font-family from parent */
+}
+
+/* Banner Tags */
+.banner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.banner-tag {
+  background-color: #e0e0e0;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Subscribe Button */
+.banner-btn {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 280px;
+  height: 41.27px;
+  padding: 12.14px 24.27px;
+  border: none;
+  border-radius: 505.64px;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16.18px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns text and icon to the left */
+  gap: 90px; /* Adds spacing between text and icon */
+  text-align: left; /* Ensures text stays left-aligned */
+  margin: 40px 0 0; /* Aligns button to the left */
+  transition: opacity 0.3s ease;
+}
+
+.banner-btn:hover {
+  opacity: 0.9;
+}
+
+/* Banner Content Wrapper */
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures left alignment */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .subscription-banner {
+    padding-left: 32px;
+    height: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .banner-content {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-btn {
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%; /* Button takes full width on smaller screens */
+  }
+}
+
+/* Morning rituals section */
+.morning-ritual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 100px; */
+  width: 85%;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+/* Left Content */
+.content {
+  width: 45%;
+}
+
+.content h1 {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #322d2d;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 20px;
+  line-height: 24.27px;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  font-size: 18px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.steps li span {
+  font-weight: bold;
+  color: #c4c4c4;
+  font-size: 72.94px;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.steps li div {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 300;
+  line-height: 20.23px;
+  margin-top: 10px;
+}
+
+.steps li div strong {
+  background: linear-gradient(90deg, #9e6718 0%, #ffb545 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  display: block; /* Ensures it takes up full width */
+}
+
+.video-container {
+  width: 100%;
+  height: 100%; /* Ensure it fills the container */
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background: url("/assets/morningbg.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container img {
+  width: 95%;
+  max-width: 100%;
+  display: block;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 448.08px;
+  height: 41.27px;
+  padding: 12.14px 24.27px;
+  border: none;
+  border-radius: 505.64px;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 14.2px;
+  line-height: 16.18px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures text is left and arrow is right */
+  transition: opacity 0.3s ease;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+  opacity: 0.85;
+}
+
+/* Button Text Styling */
+.cta-button-text {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16.18px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Pushes the text to the left */
+}
+
+/* Arrow Styling */
+.button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* Forces arrow to right-most part */
+}
+
+/* Percentage Section */
+.percentage {
+  background: url("/assets/percentagebg.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  /* Exact height */
+  height: 220px;
+  padding: 20px;
+}
+
+/* Wrapper to contain the content within the defined height */
+.percentage-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* Individual Stat Box */
+.stat {
+  flex: 1;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 🔹 Align items to the left */
+}
+
+/* Number Styling */
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px; /* 🔹 Reduced space between number and text */
+}
+
+/* Text Styling */
+.stat p {
+  font-size: 16px;
+  text-align: left; /* 🔹 Align text to the left */
+  margin: 0;
+  width: 100%;
+  line-height: 1.1; /* 🔹 Reduced line height for closer spacing */
+  color: white;
+  padding-left: 5px; /* 🔹 Add slight padding for better readability */
+}
+
+/* Benefits Section */
+.benefits-intro {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefits-intro h2 {
+  color: #322d2d;
+  margin-bottom: 30px;
+  font-family: New Rail Alphabet;
+  font-weight: 300;
+  font-size: 40.45px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.chart-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Try It Risk-Free Button */
+.try-it-button {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 307.24px;
+  height: 41.27px;
+  padding: 12.14px 24.27px;
+  border: none;
+  border-radius: 505.64px;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16.18px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns text left and arrow right */
+  gap: 6px; /* Adds spacing between text and icon */
+  text-align: left; /* Ensures text stays left-aligned */
+  margin: 60px auto 0; /* Centers button and adds spacing */
+  transition: opacity 0.3s ease;
+}
+
+/* Hover Effect */
+.try-it-button:hover {
+  opacity: 0.85;
+}
+
+/* Button Text Styling */
+.try-it-button-text {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16.18px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+/* Ensure the container centers the button */
+.benefits-intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* From Founders Section */
+.from-founder-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+
+.from-founder-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.from-founder-video {
+  position: relative;
+}
+
+.from-founder-image {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.from-founder-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* max-width: 960px; */
+  margin-top: 60px;
+}
+
+.from-founder-left {
+  flex: 1;
+  /* padding: 0 20px; */
+}
+
+.from-founder-left h2 {
+  font-size: 40.45px;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+  color: #322d2d;
+}
+
+.from-founder-right {
+  flex: 2;
+  /* padding-left: 20px; */
+}
+
+.from-founder-right p {
+  color: #322d2d;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  padding-left: 30px;
+  /* max-width: 500px; */
+}
+
+/* About Button */
+.about-button {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  padding: 12px 26px;
+  border: none;
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 14px;
+  border-radius: 25px;
+  color: #000;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.about-button:hover {
+  opacity: 0.8;
+}
+
+/* Testimonials section */
+.testimonial-section {
+  width: 100%;
+  height: 611.7528076171875px;
+  /* top: 7927px;
+left: 0.96px; */
+  padding-top: 80.9px;
+  padding-right: 64px;
+  padding-bottom: 80.9px;
+  padding-left: 64px;
+  gap: 32.36px;
+  background: #f0efeb;
+}
+
+/* Header with title and nav buttons */
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Title and subtitle aligned to the left */
+.testimonial-title-container {
+  text-align: left;
+}
+
+.testimonial-title {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #322d2d;
+}
+
+.testimonial-subtitle {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #322d2d;
+  margin-top: 30px;
+}
+
+/* Navigation buttons with border and hover */
+.testimonial-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: 1px solid #333;
+  padding: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-btn:active {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Testimonial cards layout */
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+/* Updated testimonial card style */
+.testimonial-card {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  min-width: 280px;
+  width: 421.18px;
+  height: 285px;
+  gap: 24.27px;
+  border-radius: 12.14px;
+  padding: 32.36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Star ratings */
+.stars {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Testimonial text and profile */
+.testimonial-text {
+  font-family: "New Rail Alphabet", sans-serif;
+  font-size: 16px;
+  color: #322d2d;
+  line-height: 1.5;
+  flex-grow: 1; /* Pushes profile to bottom */
+}
+
+/* Profile stays at the bottom */
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #322d2d;
+}
+
+/* Progress dots below the cards */
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  border: 1px solid #333;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* FAQ Section */
+.faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 60px 20px; */
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* FAQ Container */
+.faq-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  gap: 60px;
+}
+
+/* Left Side */
+.faq-left {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  gap: 32px;
+}
+
+.faq-title {
+  font-family: New Rail Alphabet;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  /* text-align: center; */
+  color: #322d2d;
+}
+
+.faq-subtext {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: New Rail Alphabet;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #322d2d;
+}
+
+.faq-button {
+  background: linear-gradient(
+    93.63deg,
+    #caa648 -0.61%,
+    #caa648 10.09%,
+    #d5b147 25.19%,
+    #e4c267 46.69%,
+    #e2c065 78.94%,
+    #dbb95e 90.77%,
+    #d0ae52 98.29%,
+    #c09f41 104.74%,
+    #bb9a3c 106.89%
+  );
+  width: 220.24px; /* Corrected width */
+  height: 41.27px; /* Corrected height */
+  padding: 12.14px 24.27px; /* Corrected padding */
+  border: none;
+  border-radius: 505.64px; /* Corrected border-radius */
+  border-bottom-width: 1.01px; /* Optional - specify border style if needed */
+  cursor: pointer;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 18.2px;
+  line-height: 16.18px;
+  color: #000;
+  text-align: left; /* Align text to the left */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensures text aligns to the left */
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Adds padding to maintain spacing */
+}
+
+.faq-button:hover {
+  background-color: #a68a32;
+}
+
+/* Right Side */
+.faq-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* FAQ Item */
+.faq-item {
+  border-bottom: 1px solid #000;
+  padding: 20px 24px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.faq-question {
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+/* FAQ Icon */
+.faq-icon {
+  font-size: 18px;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+}
+
+/* FAQ Footer Link */
+.faq-footer {
+  margin-top: -10px;
+  text-align: center;
+}
+
+.faq-link-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  padding: 0;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px; /* Space between text and arrow */
+  cursor: pointer;
+  margin-top: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.faq-link-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .faq-left,
+  .faq-right {
+    max-width: 100%;
+  }
+
+  .faq-title {
+    font-size: 24px;
+  }
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  position: relative;
+  background-image: url("../assets/newsletter-bg.png"); /* Correct background */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto 120px auto; /* Fixed spacing */
+  max-width: 90%;
+  padding: 80px 20px;
+  height: 646.3014526367188px;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Overlay for Dim Effect */
+.newsletter-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Dimmed effect over image */
+  border-radius: 12px;
+  padding: 50px 20px;
+  z-index: 1;
+}
+
+/* Newsletter Container */
+.newsletter-container {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Title Styling */
+.newsletter-title {
+  color: #fff;
+  margin-bottom: 12px;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 42.32px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-align: center;
+  overflow-wrap: break-word;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+}
+
+/* Subtext Styling */
+.newsletter-subtext {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  /* max-width: 500px; */
+  white-space: nowrap; /* Prevent line wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Input Box */
+.newsletter-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Subscribe Button */
+.newsletter-button {
+  width: 229.4px;
+  height: 43.68px;
+  border-radius: 35px;
+  border-width: 1.07px;
+  border-style: solid;
+  border-color: transparent;
+  font-family: "New Rail Alphabet", sans-serif;
+  font-weight: 300;
+  font-size: 21.16px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  color: #667744;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* New styles to align text and arrow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Adds padding to maintain spacing */
+}
+
+.newsletter-button:hover {
+  background-color: #f7f7f7;
+}
+
+.button-arrow {
+  width: 16px; /* Fixed incorrect width value */
+  height: 16px;
+  border-width: 1.01px;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .newsletter-title {
+    font-size: 28px;
+  }
+
+  .newsletter-subtext {
+    font-size: 18px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #322d2d;
+  color: #fff;
+  padding: 40px 80px;
+  font-family: "New Rail Alphabet", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Logo Styling */
+.logo-footer {
+  width: 324.06231689453125px;
+  height: 56.32421875px;
+  margin-bottom: 70px;
+}
+
+/* Footer Left Section */
+.footer-left {
+  display: flex;
+  gap: 100px; /* Space between links and socials */
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-column a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+/* Social Links Section */
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  margin-top: 0; /* Align top with links */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Footer Right Section */
+.footer-right {
+  width: 37%;
+}
+
+.footer-newsletter-text {
+  color: #dea453;
+  margin-bottom: 38px;
+  font-family: New Rail Alphabet;
+  font-weight: 700;
+  font-size: 16.18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.footer-newsletter-form {
+  display: flex;
+  margin-bottom: 12px;
+  width: 365.0749816894531;
+  height: 48.270912170410156;
+  gap: 8.09px;
+  border-width: 1.01px;
+  /* padding: 12.14px; */
+}
+
+.footer-newsletter-form input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.footer-newsletter-form button {
+  background-color: #ffffff;
+  font-weight: 300;
+  color: #f7a23b;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Adds padding to maintain spacing */
+}
+
+.footer-newsletter-form button:hover {
+  background-color: #f7a23b;
+  color: #22201f;
+}
+
+/* Privacy Text */
+.privacy-text {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+.privacy-link {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: left;
+  padding-top: 20px;
+  font-size: 16px;
+  color: #dea453;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "New Rail Alphabet";
+}

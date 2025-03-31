@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcami Elements</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-text">
+        GET 25% OFF YOUR FIRST MONTH. FREE SHIPPING ON U.S ORDERS.
+      </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+      <div class="nav-container">
+        <div class="logo">
+          <!-- SVG Logo -->
+          <img
+            src="assets/logo.svg"
+            alt="Alcami Elements Logo"
+            width="174.899"
+            height="30.398"
+          />
+        </div>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn"
+              >Shop
+              <svg
+                class="vector-icon"
+                width="12.74"
+                height="7.21"
+                viewBox="0 0 13 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L6.5 6L12 1"
+                  stroke="#322D2D"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Supplements</a>
+              <a href="#">Bundles</a>
+              <a href="#">Subscriptions</a>
+            </div>
+          </div>
+          <a href="#">Elements</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <!-- Button Container -->
+        <div class="btn-container">
+          <!-- Search Button -->
+          <div class="search-wrapper">
+            <button class="btn-search" aria-label="Search" onclick="toggleSearch()">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.5571 24.605L21.4222 19.4701C22.9784 17.4329 23.8319 14.9618 23.8323 12.3543C23.8323 9.21198 22.6084 6.25753 20.3861 4.0356C18.1642 1.81368 15.2101 0.589844 12.0674 0.589844C8.92512 0.589844 5.97067 1.81368 3.74875 4.0356C-0.838125 8.62286 -0.838125 16.0865 3.74875 20.673C5.97067 22.8953 8.92512 24.1191 12.0674 24.1191C14.6749 24.1188 17.146 23.2653 19.1833 21.709L24.3182 26.844C24.627 27.1532 25.0325 27.3078 25.4376 27.3078C25.8427 27.3078 26.2482 27.1532 26.5571 26.844C27.1756 26.2259 27.1756 25.2231 26.5571 24.605ZM5.98768 18.434C2.63547 15.0818 2.63585 9.62714 5.98768 6.27454C7.6116 4.651 9.7709 3.75651 12.0674 3.75651C14.3643 3.75651 16.5233 4.651 18.1472 6.27454C19.7711 7.89846 20.6656 10.0578 20.6656 12.3543C20.6656 14.6512 19.7711 16.8101 18.1472 18.434C16.5233 20.058 14.3643 20.9525 12.0674 20.9525C9.7709 20.9525 7.6116 20.058 5.98768 18.434Z" fill="#322D2D"/>
+              </svg>
+            </button>
+            <div class="search-container" id="searchBar">
+              <input type="text" placeholder="Search for Products...">
+            </div>
+          </div>
+          <!-- Try Alcami Button -->
+          <button class="btn-try">
+            <span class="btn-try-text"
+              >Try Alcami
+              <span class="button-arrow"
+                ><svg
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                    fill="black"
+                  />
+                </svg> </span
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="home-hero">
+      <div class="home-container">
+        <div class="home-rating-box">
+          <span class="home-stars">⭐ 4.8 star rating</span> awarded the top
+          adaptogen blend in the world
+        </div>
+        <div>
+          <h1 class="home-title">Achieve your highest self.</h1>
+          <div class="home-stats">
+            <div class="home-stat">
+              <h2 class="home-stat-value">10x</h2>
+              <p class="home-stat-label">concentration</p>
+            </div>
+            <div class="home-stat">
+              <h2 class="home-stat-value">9</h2>
+              <p class="home-stat-label">powerful ingredients</p>
+            </div>
+            <div class="home-stat">
+              <h2 class="home-stat-value">1000<span>mg</span></h2>
+              <p class="home-stat-label">of Adaptogens per dose</p>
+            </div>
+          </div>
+        </div>
+        <button class="home-btn-shop">
+          Shop Now
+          <span class="button-arrow">
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                fill="black"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="home-product-container">
+        <img
+          src="assets/home1.png"
+          alt="Alcami Product 1"
+          class="home-product-img"
+        />
+      </div>
+    </section>
+
+    <!-- Taste Section -->
+    <section class="taste-section">
+      <p>Incredible Taste And Effects You Can Feel</p>
+    </section>
+
+    <!-- Powerful Elements Section -->
+    <section class="powerful-elements">
+      <div class="powerful-elements-container">
+        <!-- Left Section with Image and Ingredients -->
+        <div class="elements-img-container">
+          <img
+            src="assets/hero2.png"
+            alt="Alcami Product 2"
+            class="product-img2"
+          />
+        </div>
+
+        <!-- Right Section with Text -->
+        <div class="elements-text-container">
+          <h3>9 POWERFUL ELEMENTS</h3>
+          <h1>All of the Best Ingredients, None of the Compromise</h1>
+          <p>
+            Alcami uses <strong>x10 potency</strong> in every serving,
+            formulated for maximum absorption to ensure your body gets the most
+            out of every scoop.
+          </p>
+          <button class="btn-view-ingredients">
+            <span class="btn-view-ingredients-text">
+              View full ingredients
+              <span class="button-arrow"
+                ><svg
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR GUARANTEE -->
+    <section class="our-guarantee-section">
+      <div class="our-guarantee-container">
+        <div class="guarantee-item">
+          <span class="guarantee-title">OUR GUARANTEE</span>
+        </div>
+        <div class="guarantee-item">
+          <img src="assets/heart.png" alt="30-day Guarantee" />
+          <div class="guarantee-content">
+            <h3>30-day Guarantee</h3>
+            <p>Love Alcami or send it back</p>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <img src="assets/earth.png" alt="Worldwide Shipping" />
+          <div class="guarantee-content">
+            <h3>Worldwide Shipping</h3>
+            <p>Alcami ships everywhere</p>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <img src="assets/box.png" alt="Fast Delivery" />
+          <div class="guarantee-content">
+            <h3>Fast Delivery</h3>
+            <p>On time quick shipping</p>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <img src="assets/leaves.png" alt="Eco Certified" />
+          <div class="guarantee-content">
+            <h3>Eco Certified</h3>
+            <p>Carbon neutral eco packaging</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="also-seen-in-section">
+      <div class="also-seen-in-item-container">
+        <div class="also-seen-in-item">
+          <span class="also-seen-in-item-title">AS SEEN IN</span>
+        </div>
+        <div class="also-seen-in-item-one">
+          <img src="assets/also-seen-in-item-one.png" alt="30-day Guarantee" />
+        </div>
+        <div class="also-seen-in-item-two">
+          <img
+            src="assets/also-seen-in-item-two.png"
+            alt="Worldwide Shipping"
+          />
+        </div>
+        <div class="also-seen-in-item-three">
+          <img src="assets/also-seen-in-item-three.png" alt="Fast Delivery" />
+        </div>
+        <div class="also-seen-in-item-four">
+          <img src="assets/also-seen-in-item-four.png" alt="Eco Certified" />
+        </div>
+        <div class="also-seen-in-item-five">
+          <img src="assets/also-seen-in-item-five.png" alt="Eco Certified" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Sub Section -->
+    <section class="cart-sub">
+      <div class="cart-sub-display">
+        <!-- Left Section (Product Display) -->
+        <div class="cart-sub-left">
+          <div class="cart-sub-slider-container">
+            <div class="cart-sub-slider">
+              <div class="cart-sub-slide">
+                <img src="assets/white-slider.png" alt="Main Product" class="cart-sub-main-img" />
+              </div>
+            </div>
+    
+            <!-- Navigation Arrows -->
+            <div class="cart-sub-arrows">
+              <button class="cart-sub-prev" onclick="moveSlide(-1)">&#10094;</button>
+          
+              <div class="cart-sub-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+              </div>
+          
+              <button class="cart-sub-next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+          
+          </div>
+    
+          <!-- Thumbnails Container -->
+          <div class="cart-sub-thumbnails-container">
+            <div class="cart-sub-thumbnail-row">
+              <img src="assets/image1.png" alt="Thumbnail 1" class="cart-sub-thumbnail" />
+              <img src="assets/image2.png" alt="Thumbnail 2" class="cart-sub-thumbnail" />
+              <img src="assets/image3.png" alt="Thumbnail 3" class="cart-sub-thumbnail" />
+              <img src="assets/image4.png" alt="Thumbnail 4" class="cart-sub-thumbnail" />
+            </div>
+            <div class="cart-sub-thumbnail-row">
+              <img src="assets/green1.png" alt="Thumbnail 5" class="cart-sub-thumbnail" />
+              <img src="assets/green2.png" alt="Thumbnail 6" class="cart-sub-thumbnail" />
+              <img src="assets/brown1.png" alt="Thumbnail 7" class="cart-sub-thumbnail" />
+              <img src="assets/brown2.png" alt="Thumbnail 8" class="cart-sub-thumbnail" />
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Section (Product Info & Options) -->
+        <div class="cart-sub-right">
+          <h2 class="cart-sub-title">Alcami Elements</h2>
+          <p class="cart-sub-description">
+            Discover the ancient wisdom supported by modern sciences, all within the synergy of Alcami Elements.
+            Designed for those who aspire to elevate every facet of life with awareness and intention.
+          </p>
+    
+          <h3 class="cart-sub-subheading">Choose a flavor</h3>
+          <div class="cart-sub-flavors">
+            <label class="cart-sub-flavor">
+              <div class="cart-sub-flavor-header">
+                <input type="radio" name="flavor" value="original" checked />
+                <span>Original</span>
+              </div>
+              <img src="assets/original.png" alt="Original" class="cart-sub-flavor-img" />
+              <img src="assets/bestseller.png" alt="" class="bestseller-badge">
+            </label>
+    
+            <label class="cart-sub-flavor">
+              <div class="cart-sub-flavor-header">
+                <input type="radio" name="flavor" value="matcha" />
+                <span>Matcha</span>
+              </div>
+              <img src="assets/motcha.png" alt="Matcha" class="cart-sub-flavor-img" />
+            </label>
+    
+            <label class="cart-sub-flavor">
+              <div class="cart-sub-flavor-header">
+                <input type="radio" name="flavor" value="cacao" />
+                <span>Cacao</span>
+              </div>
+              <img src="assets/cacao.png" alt="Cacao" class="cart-sub-flavor-img" />
+            </label>
+          </div>
+    
+          <div class="cart-sub-options">
+            <!-- Most Popular Badge -->
+            <div class="cart-sub-badge">Most Popular</div>
+    
+            <!-- Single Kit Subscription -->
+            <div class="cart-sub-option most-popular">
+              <label class="cart-sub-label">
+                  <input type="radio" name="subscription" checked />
+                  <span class="cart-sub-option-title">Single Kit Subscription</span>
+                  <span class="cart-sub-price">$37 USD <del>$46</del></span>
+              </label>
+              <span class="only-border"></span>
+              <div class="single-kit-imgs">
+                <div class="cart-sub-most-popular-wrapper">
+                  <img src="assets/every30days.png" alt="Most Popular" class="cart-sub-most-popular" />
+                </div>
+                <div class="cart-sub-most-popular-wrapper">
+                  <img src="assets/oneTime.png" alt="Most Popular" class="cart-sub-most-popular" />
+                </div>
+              </div>
+              
+              <!-- What's Included Section -->
+              <div class="cart-sub-includes">
+                  <p class="cart-sub-includes-title">What's Included:</p>
+                  <ul>
+                      <li><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2978 0.519266C12.5774 0.763898 12.6028 1.19008 12.3541 1.46607L5.35385 9.23593C5.10388 9.51337 4.67469 9.53101 4.40279 9.27507L0.35199 5.46159C0.0993685 5.22376 0.0751864 4.82747 0.291927 4.55655C0.531086 4.2576 0.976452 4.21646 1.26108 4.47246L4.40396 7.29942C4.67709 7.5451 5.09759 7.52313 5.34367 7.25035L11.3649 0.574342C11.6085 0.304183 12.0241 0.279695 12.2978 0.519266Z" fill="#322D2D"/>
+                        </svg>
+                        30 Servings Shipped Monthly</li>
+                      <li><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2978 0.519266C12.5774 0.763898 12.6028 1.19008 12.3541 1.46607L5.35385 9.23593C5.10388 9.51337 4.67469 9.53101 4.40279 9.27507L0.35199 5.46159C0.0993685 5.22376 0.0751864 4.82747 0.291927 4.55655C0.531086 4.2576 0.976452 4.21646 1.26108 4.47246L4.40396 7.29942C4.67709 7.5451 5.09759 7.52313 5.34367 7.25035L11.3649 0.574342C11.6085 0.304183 12.0241 0.279695 12.2978 0.519266Z" fill="#322D2D"/>
+                        </svg>
+                        <b>Free</b> Golden Kit Gold Bottle + Spoon ($25 Value)</li>
+                      <li><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2978 0.519266C12.5774 0.763898 12.6028 1.19008 12.3541 1.46607L5.35385 9.23593C5.10388 9.51337 4.67469 9.53101 4.40279 9.27507L0.35199 5.46159C0.0993685 5.22376 0.0751864 4.82747 0.291927 4.55655C0.531086 4.2576 0.976452 4.21646 1.26108 4.47246L4.40396 7.29942C4.67709 7.5451 5.09759 7.52313 5.34367 7.25035L11.3649 0.574342C11.6085 0.304183 12.0241 0.279695 12.2978 0.519266Z" fill="#322D2D"/>
+                        </svg>
+                        <b>Free</b> 60 Days Supply of Alcami Shilajit ($78 Value)</li>
+                      <li><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2978 0.519266C12.5774 0.763898 12.6028 1.19008 12.3541 1.46607L5.35385 9.23593C5.10388 9.51337 4.67469 9.53101 4.40279 9.27507L0.35199 5.46159C0.0993685 5.22376 0.0751864 4.82747 0.291927 4.55655C0.531086 4.2576 0.976452 4.21646 1.26108 4.47246L4.40396 7.29942C4.67709 7.5451 5.09759 7.52313 5.34367 7.25035L11.3649 0.574342C11.6085 0.304183 12.0241 0.279695 12.2978 0.519266Z" fill="#322D2D"/>
+                        </svg>
+                        <b>50% OFF</b> Shipping (Over $7.50 in Savings)</li>
+                      <li><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2978 0.519266C12.5774 0.763898 12.6028 1.19008 12.3541 1.46607L5.35385 9.23593C5.10388 9.51337 4.67469 9.53101 4.40279 9.27507L0.35199 5.46159C0.0993685 5.22376 0.0751864 4.82747 0.291927 4.55655C0.531086 4.2576 0.976452 4.21646 1.26108 4.47246L4.40396 7.29942C4.67709 7.5451 5.09759 7.52313 5.34367 7.25035L11.3649 0.574342C11.6085 0.304183 12.0241 0.279695 12.2978 0.519266Z" fill="#322D2D"/>
+                        </svg>
+                        Pause or Cancel Anytime After 2 Months Minimum</li>
+                      <li><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2978 0.519266C12.5774 0.763898 12.6028 1.19008 12.3541 1.46607L5.35385 9.23593C5.10388 9.51337 4.67469 9.53101 4.40279 9.27507L0.35199 5.46159C0.0993685 5.22376 0.0751864 4.82747 0.291927 4.55655C0.531086 4.2576 0.976452 4.21646 1.26108 4.47246L4.40396 7.29942C4.67709 7.5451 5.09759 7.52313 5.34367 7.25035L11.3649 0.574342C11.6085 0.304183 12.0241 0.279695 12.2978 0.519266Z" fill="#322D2D"/>
+                        </svg>
+                        30 Day Money Back Guarantee</li>
+                  </ul>
+              </div>
+          </div>
+          
+          <!-- Double Kit Subscription -->
+          <div class="cart-sub-option">
+              <label class="cart-sub-label">
+                  <input type="radio" name="subscription" />
+                  <span class="cart-sub-option-title">Double Kit Subscription</span>
+                  <span class="cart-sub-price">$68 USD <del>$83</del></span>
+              </label>
+          </div>
+          
+          <!-- Try Once -->
+          <div class="cart-sub-option">
+              <label class="cart-sub-label">
+                  <input type="radio" name="subscription" />
+                  <span class="cart-sub-option-title">Try Once</span>
+                  <span class="cart-sub-price">$46 USD</span>
+              </label>
+          </div>
+          
+    
+          <!-- Add to Cart Button -->
+          <button class="cart-sub-add-btn">Add to Cart →</button>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Adds-onn section -->
+    <section class="add-ons-section">
+      <div class="add-ons-item-container">
+        <div class="add-ons-item-one">
+          <img src="assets/addonOne.png" alt="Add-on One" />
+        </div>
+        <div class="add-ons-item-two">
+          <img src="assets/addonTwo.png" alt="Add-on Two" />
+        </div>
+        <div class="add-ons-item-three">
+          <img src="assets/addonThree.png" alt="Add-on Three" />
+        </div>
+        <div class="add-ons-item-four">
+          <img src="assets/addonKito.png" alt="Add-on Four" />
+        </div>
+        <div class="add-ons-item-five">
+          <img src="assets/addonGMP.png" alt="Add-on Five" />
+        </div>
+        <div class="add-ons-item-six">
+          <img src="assets/addonSix.png" alt="Add-on Five" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Shilajit Section -->
+    <section class="prod-shilajit">
+      <h1 class="prod-title">Himalayan Shilajit</h1>
+      <p class="prod-subtitle">Nature’s Ultimate Adaptogen</p>
+      <div class="prod-container">
+        <!-- Left Side: Product Image -->
+        <div class="prod-image">
+          <img src="/assets/shilajit.png" alt="Himalayan Shilajit" />
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="prod-content">
+          <div class="prod-benefits">
+            <div class="benefit-card">
+              <span class="benefit-icon">
+                <img src="/assets/boltImg.png" alt="Benefit 1" />
+              </span>
+              <div>
+                <h3>Boosts Energy and Stamina</h3>
+                <p>
+                  Shilajit enhances vitality, supporting increased energy
+                  levels, physical endurance, and overall stamina.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon">
+                <img src="/assets/boneImh.png" alt="Benefit 2" />
+              </span>
+              <div>
+                <h3>Enhances Bone and Men's Health</h3>
+                <p>
+                  Shilajit provides essential minerals for strong bones and
+                  supports reproductive health and testosterone levels.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon">
+                <img src="/assets/brainSettingImg.png" alt="Benefit 3" />
+              </span>
+              <div>
+                <h3>Promotes Cognitive Function & Stress Relief</h3>
+                <p>
+                  Shilajit may improve mental clarity, focus, and memory while
+                  helping the body adapt to stress.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon">
+                <img src="/assets/immunityImg.png" alt="Benefit 4" />
+              </span>
+              <div>
+                <h3>Supports Immune Health & Anti-Aging</h3>
+                <p>
+                  Rich in antioxidants, Shilajit aids in reducing oxidative
+                  stress, boosting the immune system, and promoting skin health.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CTA Button -->
+      <button class="cta-button-shilaji">
+        <span class="cta-button-shilaji-text">
+          Try Shilajit
+          <span class="button-arrow">
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                fill="black"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </section>
+
+    <!-- Subscription Banner -->
+    <div class="subscription-banner">
+      <div class="banner-content">
+        <!-- Left Side Content -->
+        <div class="banner-text">
+          <p class="banner-subtitle">SUBSCRIPTION</p>
+          <h2 class="banner-title">
+            Subscribe & save <span class="banner-bold">20%</span> + free frother
+            and bottle and spoon
+          </h2>
+
+          <!-- Tag List -->
+          <div class="banner-tags">
+            <span class="banner-tag">LASER FOCUS</span>
+            <span class="banner-tag">SUSTAINED ENERGY</span>
+            <span class="banner-tag">CLEAR MIND</span>
+            <span class="banner-tag">IMPROVED MOOD</span>
+            <span class="banner-tag">NO CAFFEINE</span>
+            <span class="banner-tag">CALM BALANCE</span>
+          </div>
+
+          <!-- Subscribe Button -->
+          <button class="banner-btn" onclick="subscribe()">
+            Subscribe Now
+            <span class="button-arrow">
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Morning Rituals Section -->
+    <section class="morning-ritual">
+      <div class="content">
+        <h1>
+          Your morning ritual,<br />
+          made to awaken your mind.
+        </h1>
+        <p>
+          Transform your mornings with a simple, potent, and powerful ritual
+          that fuels your day.
+        </p>
+        <ul class="steps">
+          <li>
+            <span>1</span>
+            <div>
+              <strong>Prep your favorite drink</strong><br />
+              Start your morning with your favorite beverage, whether it's a
+              nutrient-packed smoothie or a warm cup of tea.
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <strong>Take a scoop</strong><br />
+              Simply add one potent scoop packed with x10 the potency to boost
+              energy, enhance clarity, and support wellness all day.
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <strong>Customize and mix</strong><br />
+              Personalize your morning drink. Stir well for a perfectly blended,
+              nutrient-rich beverage that awakens your mind and prepares you for
+              the day.
+            </div>
+          </li>
+        </ul>
+        <button class="cta-button">
+          <span class="cta-button-text"
+            >See how people are using Alcami
+            <span class="button-arrow">
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div class="video-wrapper">
+        <div class="video-container">
+          <img src="/assets/videoThambnail2.png" alt="Video Thumbnail" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Percentage Section -->
+    <section class="percentage" id="percentage">
+      <div class="percentage-content">
+        <div class="stat">
+          <div class="number" data-target="84">0%</div>
+          <p>Reported increased energy throughout their day</p>
+        </div>
+        <div class="stat">
+          <div class="number" data-target="78">0%</div>
+          <p>Reported feeling more focused</p>
+        </div>
+        <div class="stat">
+          <div class="number" data-target="89">0%</div>
+          <p>Reported a sense of calmness & steady mood</p>
+        </div>
+        <div class="stat">
+          <div class="number" data-target="90">0%</div>
+          <p>
+            Reported feeling an overall increased wellness in their gut, skin,
+            hair, and physical health
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-intro">
+      <div class="divider">
+        <svg
+          width="40"
+          height="3"
+          viewBox="0 0 40 3"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.458215 2.92V0.68H11.4182V2.92H0.458215ZM14.5988 2.92V0.68H25.5588V2.92H14.5988ZM28.7395 2.92V0.68H39.6995V2.92H28.7395Z"
+            fill="#322D2D"
+          />
+        </svg>
+      </div>
+      <h2>
+        Why Alcami is the #1 Choice for your <br />
+        Productivity and Performance
+      </h2>
+      <div class="chart-container">
+        <img
+          src="assets/benefitsImg.png"
+          alt="Alcami Benefits Chart"
+          class="chart-image"
+        />
+      </div>
+      <button class="try-it-button">
+        <span class="try-it-button-text">Try It Risk-Free</span>
+        <span class="button-arrow">
+          <svg
+            width="14"
+            height="8"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+      </button>
+    </section>
+
+    <!-- from-founder section -->
+    <section id="from-founder" class="from-founder-container">
+      <div class="from-founder-card">
+        <div class="from-founder-video">
+          <img
+            src="assets/videoImg.png"
+            alt="From the Founders"
+            class="from-founder-image"
+          />
+          <button class="play-button">
+            <span class="play-icon">▶</span>
+          </button>
+        </div>
+        <div class="from-founder-content-wrapper">
+          <div class="from-founder-left">
+            <h2>From the Founders</h2>
+            <button class="about-button">
+              About Us
+              <span class="button-arrow">
+                <svg
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="from-founder-right">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Consectetur adipiscing elit, sed do eiusmod
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+      <div class="testimonial-header">
+        <div class="testimonial-title-container">
+          <h2 class="testimonial-title">What our customers are saying</h2>
+          <p class="testimonial-subtitle">Real people, real reviews.</p>
+        </div>
+        <div class="testimonial-nav">
+          <button class="nav-btn left-btn" onclick="changeBg(this)">
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              transform="rotate(180)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <button class="nav-btn right-btn" onclick="changeBg(this)">
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare."
+          </p>
+          <div class="testimonial-profile">
+            <img
+              src="assets/placeholder.png"
+              alt="User"
+              class="testimonial-avatar"
+            />
+            <div class="testimonial-info">
+              <span>Name Surname</span>
+              <span>Position, Company name</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare."
+          </p>
+          <div class="testimonial-profile">
+            <img
+              src="assets/placeholder.png"
+              alt="User"
+              class="testimonial-avatar"
+            />
+            <div class="testimonial-info">
+              <span>Name Surname</span>
+              <span>Position, Company name</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0326 1.37902C10.3803 0.553346 11.5642 0.553347 11.9119 1.37902L13.9635 6.25231C14.1102 6.60039 14.4415 6.83822 14.8219 6.86835L20.1473 7.29014C21.0496 7.3616 21.4155 8.47401 20.728 9.05577L16.6706 12.4894C16.3808 12.7347 16.2542 13.1195 16.3428 13.4862L17.5824 18.6201C17.7924 19.4899 16.8346 20.1775 16.0621 19.7114L11.5027 16.9601C11.177 16.7636 10.7675 16.7636 10.4418 16.9601L5.88243 19.7114C5.10993 20.1775 4.15208 19.4899 4.36211 18.6201L5.60173 13.4862C5.69028 13.1195 5.56371 12.7347 5.27391 12.4894L1.21642 9.05577C0.528969 8.47401 0.894839 7.3616 1.79713 7.29014L7.12264 6.86835C7.50303 6.83822 7.83439 6.60039 7.98093 6.25231L10.0326 1.37902Z"
+                fill="#00B67A"
+              />
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare."
+          </p>
+          <div class="testimonial-profile">
+            <img
+              src="assets/placeholder.png"
+              alt="User"
+              class="testimonial-avatar"
+            />
+            <div class="testimonial-info">
+              <span>Name Surname</span>
+              <span>Position, Company name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Dots -->
+      <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <!-- Left Side -->
+        <div class="faq-left">
+          <h2 class="faq-title">F.A.Qs</h2>
+          <p class="faq-subtext">
+            If you have any question that isn't answered in our FAQs, we'd love
+            to hear from you!
+          </p>
+          <button class="faq-button">
+            Get in touch
+            <span class="button-arrow"
+              ><svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Right Side -->
+        <div class="faq-right">
+          <div class="faq-item">
+            <div class="faq-question">
+              If I subscribe can I cancel anytime?
+              <span class="faq-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2016 9.88093V10.5551C19.2016 10.9274 18.8998 11.2293 18.5274 11.2293H10.7742V18.9825C10.7742 19.3548 10.4723 19.6566 10.1 19.6566H9.42584C9.05349 19.6566 8.75162 19.3548 8.75162 18.9825V11.2293H0.998414C0.626068 11.2293 0.324219 10.9274 0.324219 10.5551V9.88093C0.324219 9.50857 0.626068 9.2067 0.998414 9.2067H8.75162V1.45348C8.75162 1.08114 9.05349 0.779297 9.42584 0.779297H10.1C10.4723 0.779297 10.7742 1.08114 10.7742 1.45348V9.2067H18.5274C18.8998 9.2067 19.2016 9.50857 19.2016 9.88093Z"
+                    fill="#322D2D"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I take this at night?
+              <span class="faq-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2016 9.88093V10.5551C19.2016 10.9274 18.8998 11.2293 18.5274 11.2293H10.7742V18.9825C10.7742 19.3548 10.4723 19.6566 10.1 19.6566H9.42584C9.05349 19.6566 8.75162 19.3548 8.75162 18.9825V11.2293H0.998414C0.626068 11.2293 0.324219 10.9274 0.324219 10.5551V9.88093C0.324219 9.50857 0.626068 9.2067 0.998414 9.2067H8.75162V1.45348C8.75162 1.08114 9.05349 0.779297 9.42584 0.779297H10.1C10.4723 0.779297 10.7742 1.08114 10.7742 1.45348V9.2067H18.5274C18.8998 9.2067 19.2016 9.50857 19.2016 9.88093Z"
+                    fill="#322D2D"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Where are your ingredients sourced from?
+              <span class="faq-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2016 9.88093V10.5551C19.2016 10.9274 18.8998 11.2293 18.5274 11.2293H10.7742V18.9825C10.7742 19.3548 10.4723 19.6566 10.1 19.6566H9.42584C9.05349 19.6566 8.75162 19.3548 8.75162 18.9825V11.2293H0.998414C0.626068 11.2293 0.324219 10.9274 0.324219 10.5551V9.88093C0.324219 9.50857 0.626068 9.2067 0.998414 9.2067H8.75162V1.45348C8.75162 1.08114 9.05349 0.779297 9.42584 0.779297H10.1C10.4723 0.779297 10.7742 1.08114 10.7742 1.45348V9.2067H18.5274C18.8998 9.2067 19.2016 9.50857 19.2016 9.88093Z"
+                    fill="#322D2D"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Will this get me high?
+              <span class="faq-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2016 9.88093V10.5551C19.2016 10.9274 18.8998 11.2293 18.5274 11.2293H10.7742V18.9825C10.7742 19.3548 10.4723 19.6566 10.1 19.6566H9.42584C9.05349 19.6566 8.75162 19.3548 8.75162 18.9825V11.2293H0.998414C0.626068 11.2293 0.324219 10.9274 0.324219 10.5551V9.88093C0.324219 9.50857 0.626068 9.2067 0.998414 9.2067H8.75162V1.45348C8.75162 1.08114 9.05349 0.779297 9.42584 0.779297H10.1C10.4723 0.779297 10.7742 1.08114 10.7742 1.45348V9.2067H18.5274C18.8998 9.2067 19.2016 9.50857 19.2016 9.88093Z"
+                    fill="#322D2D"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Are you using fruiting bodies for your mushrooms?
+              <span class="faq-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2016 9.88093V10.5551C19.2016 10.9274 18.8998 11.2293 18.5274 11.2293H10.7742V18.9825C10.7742 19.3548 10.4723 19.6566 10.1 19.6566H9.42584C9.05349 19.6566 8.75162 19.3548 8.75162 18.9825V11.2293H0.998414C0.626068 11.2293 0.324219 10.9274 0.324219 10.5551V9.88093C0.324219 9.50857 0.626068 9.2067 0.998414 9.2067H8.75162V1.45348C8.75162 1.08114 9.05349 0.779297 9.42584 0.779297H10.1C10.4723 0.779297 10.7742 1.08114 10.7742 1.45348V9.2067H18.5274C18.8998 9.2067 19.2016 9.50857 19.2016 9.88093Z"
+                    fill="#322D2D"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="faq-footer">
+            <button type="button" class="faq-link-button">
+              See All FAQs
+              <span class="button-arrow">
+                <svg
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="newsletter-section">
+      <div class="newsletter-overlay">
+        <div class="newsletter-container">
+          <!-- Newsletter Heading and Subtext -->
+          <h2 class="newsletter-title">
+            Sign up and receive up to 15% OFF on your first order
+          </h2>
+          <p class="newsletter-subtext">
+            Get weekly recipes, insights, and freebies when you sign up to our
+            newsletter.
+          </p>
+
+          <!-- Newsletter Form -->
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder=""
+              required
+              class="newsletter-input"
+            />
+            <button type="submit" class="newsletter-button">
+              Subscribe
+              <span class="button-arrow"
+                ><svg
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.929688 3.57248C0.650428 3.57248 0.424044 3.79887 0.424043 4.07812C0.424043 4.35738 0.650428 4.58377 0.929687 4.58377L0.929688 3.57248ZM13.287 4.43567C13.4845 4.2382 13.4845 3.91805 13.287 3.72058L10.0691 0.502683C9.87165 0.305216 9.5515 0.305216 9.35403 0.502682C9.15657 0.700149 9.15657 1.0203 9.35403 1.21777L12.2144 4.07813L9.35403 6.93848C9.15657 7.13595 9.15657 7.4561 9.35403 7.65357C9.5515 7.85104 9.87165 7.85104 10.0691 7.65357L13.287 4.43567ZM0.929687 4.58377L12.9295 4.58377L12.9295 3.57248L0.929688 3.57248L0.929687 4.58377Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="assets/logo-footer.png" alt="Logo" class="logo-footer" />
+      </div>
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <div class="footer-links">
+            <div class="footer-column">
+              <a href="#">Home</a>
+              <a href="#">Shop</a>
+              <a href="#">Elements</a>
+            </div>
+            <div class="footer-column">
+              <a href="#">About Us</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-link">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.7687 13.1415C22.7687 7.52215 18.2411 2.9668 12.6558 2.9668C7.07066 2.9668 2.54297 7.52215 2.54297 13.1415C2.54297 18.2199 6.24109 22.4292 11.0757 23.1926V16.0826H8.50799V13.1415H11.0757V10.8999C11.0757 8.34984 12.5856 6.94128 14.8954 6.94128C16.002 6.94128 17.1592 7.14001 17.1592 7.14001V9.64394H15.8841C14.6279 9.64394 14.236 10.4283 14.236 11.233V13.1415H17.0407L16.5924 16.0826H14.236V23.1926C19.0707 22.4292 22.7687 18.2201 22.7687 13.1415Z"
+                  fill="white"
+                />
+              </svg>
+              Facebook
+            </a>
+            <a href="#" class="social-link">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.7014 3.42969H8.61113C5.81854 3.42969 3.55469 5.69354 3.55469 8.48613V16.5764C3.55469 19.369 5.81854 21.6329 8.61113 21.6329H16.7014C19.494 21.6329 21.7579 19.369 21.7579 16.5764V8.48613C21.7579 5.69354 19.494 3.42969 16.7014 3.42969ZM19.9881 16.5764C19.9826 18.3893 18.5143 19.8576 16.7014 19.8631H8.61113C6.79824 19.8576 5.32999 18.3893 5.32444 16.5764V8.48613C5.32999 6.67324 6.79824 5.20499 8.61113 5.19944H16.7014C18.5143 5.20499 19.9826 6.67324 19.9881 8.48613V16.5764ZM17.4599 8.73895C18.0184 8.73895 18.4712 8.28618 18.4712 7.72766C18.4712 7.16915 18.0184 6.71637 17.4599 6.71637C16.9014 6.71637 16.4486 7.16915 16.4486 7.72766C16.4486 8.28618 16.9014 8.73895 17.4599 8.73895ZM12.6563 7.98048C10.1429 7.98048 8.10548 10.0179 8.10548 12.5313C8.10548 15.0446 10.1429 17.0821 12.6563 17.0821C15.1696 17.0821 17.2071 15.0446 17.2071 12.5313C17.2098 11.3235 16.7312 10.1644 15.8771 9.31041C15.0231 8.45639 13.8641 7.97779 12.6563 7.98048ZM9.87524 12.5313C9.87524 14.0672 11.1203 15.3123 12.6563 15.3123C14.1922 15.3123 15.4373 14.0672 15.4373 12.5313C15.4373 10.9953 14.1922 9.75024 12.6563 9.75024C11.1203 9.75024 9.87524 10.9953 9.87524 12.5313Z"
+                  fill="white"
+                />
+              </svg>
+              Instagram
+            </a>
+            <a href="#" class="social-link">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.8908 4.89258H20.6821L14.5839 11.7465L21.7579 21.0732H16.1408L11.7412 15.4166L6.7071 21.0732H3.91414L10.4367 13.7422L3.55469 4.89258H9.31443L13.2913 10.0629L17.8908 4.89258ZM16.9111 19.4302H18.4578L8.47401 6.44923H6.81427L16.9111 19.4302Z"
+                  fill="white"
+                />
+              </svg>
+
+              X
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="footer-right">
+          <p class="footer-newsletter-text">
+            <strong
+              >Join our newsletter to stay up to date on features and
+              releases.</strong
+            >
+          </p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="privacy-text">
+            By subscribing you agree to with our
+            <a href="#" class="privacy-link">Privacy Policy</a>
+            and provide consent to receive updates from our company.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        © 2024 ALCAMI ELEMENTS. ALL RIGHTS RESERVED.
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
