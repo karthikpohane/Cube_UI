@@ -416,7 +416,7 @@ body {
   border: solid 2px transparent;
   border-radius: 16px;
   background-clip: padding-box;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 /* Gradient border using pseudo-element */
@@ -476,7 +476,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 48px;
-  margin-bottom: 120px;
+  margin-bottom: 80;
 }
 
 /* Inner Container */
@@ -614,7 +614,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 /* Container */
@@ -706,7 +706,7 @@ h2 {
   max-width: 1328px;
   margin: 0 auto;
   padding: 24px 0;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 /* Title */
@@ -1447,7 +1447,7 @@ h2 {
   /* padding: 100px; */
   width: 85%;
   margin: auto;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 /* Left Content */
@@ -1739,7 +1739,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .from-founder-card {
