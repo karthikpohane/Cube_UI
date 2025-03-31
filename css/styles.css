@@ -1293,7 +1293,7 @@ h2 {
 /* Subscription Banner */
 .subscription-banner {
   height: 480px;
-  background-image: url("/assets/bannerImg.png");
+  background-image: url("../assets/bannerImg.png");
   background-size: cover;
   background-position: center;
   display: flex;
